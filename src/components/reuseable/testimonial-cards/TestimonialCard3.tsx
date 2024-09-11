@@ -7,7 +7,7 @@ interface TestimonialCard3Props {
   image: string;
   review: string;
   shadow?: boolean;
-  designation: string;
+  // designation: string;
   hideRating?: boolean;
 }
 // =================================================
@@ -18,13 +18,11 @@ export default function TestimonialCard3({
   review,
   shadow,
   hideRating,
-  designation
+  // designation
 }: TestimonialCard3Props) {
   return (
     <div className={clsx({ card: true, "shadow-lg": shadow })}>
       <div className="card-body">
-        {hideRating ? null : <span className="ratings five mb-3" />}
-
         <blockquote className="icon mb-0">
           <p>“{review}”</p>
 
@@ -35,7 +33,8 @@ export default function TestimonialCard3({
 
             <div className="info">
               <h5 className="mb-0">{name}</h5>
-              <p className="mb-0">{designation}</p>
+              {/* <p className="mb-0">{designation}</p> */}
+              {hideRating ? null : <span className="ratings five mb-3" />}
             </div>
           </div>
         </blockquote>

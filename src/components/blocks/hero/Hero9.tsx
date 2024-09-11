@@ -11,7 +11,7 @@ export default function Hero9() {
   const OPTIONS = {
     loop: true,
     autoStart: true,
-    strings: ["easy usage", "fast transactions", "secure payments"]
+    strings: ["easy usage"],
   };
 
   return (
@@ -19,24 +19,37 @@ export default function Hero9() {
       <div className="container pt-10 pb-12 pt-md-14 pb-md-17">
         <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
           <div className="col-md-10 offset-md-1 offset-lg-0 col-lg-5 mt-lg-n2 text-center text-lg-start order-2 order-lg-0">
-            <h1 className="display-1 mb-5 mx-md-10 mx-lg-0" style={slideInDownAnimate("600ms")}>
-              Sandbox is effortless and powerful with <br />
+            <h1
+              className="display-1 mb-5 mx-md-10 mx-lg-0"
+              style={slideInDownAnimate("600ms")}
+            >
+              Skoop is effortless and powerful extension for <br />
               <span className="typer text-primary text-nowrap">
                 <Typewriter options={OPTIONS} />
               </span>
             </h1>
 
             <p className="lead fs-lg mb-7" style={slideInDownAnimate("900ms")}>
-              Achieve your saving goals. Have all your recurring and one time expenses and incomes in one place.
+              Streamline your LinkedIn and Gmail communications with Skoop, the
+              Chrome extension that enables you to create personalized, candid
+              videos and voice memos.
             </p>
 
             <div className="d-flex justify-content-center justify-content-lg-start">
               <span style={slideInDownAnimate("1200ms")}>
-                <NextLink title="Get Started" href="#" className="btn btn-lg btn-primary rounded me-2" />
+                <NextLink
+                  title="Watch Video"
+                  href="#"
+                  className="btn btn-lg btn-primary rounded me-2"
+                />
               </span>
 
               <span style={slideInDownAnimate("1500ms")}>
-                <NextLink title="Free Trial" href="#" className="btn btn-lg btn-green rounded" />
+                <NextLink
+                  title="Free Trial"
+                  href="#"
+                  className="btn btn-lg btn-green rounded"
+                />
               </span>
             </div>
           </div>
@@ -53,7 +66,10 @@ export default function Hero9() {
                   />
                 </div>
 
-                <div className="ms-auto mt-5 mb-10" style={zoomInAnimate("600ms")}>
+                <div
+                  className="ms-auto mt-5 mb-10"
+                  style={zoomInAnimate("600ms")}
+                >
                   <img
                     alt="demo"
                     src="/img/photos/sa18.jpg"

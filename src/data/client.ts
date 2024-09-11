@@ -1,11 +1,14 @@
 // used in the client-1, hero-21 block
 const clientList = [
-  '/img/brands/c1.png',
-  '/img/brands/c2.png',
-  '/img/brands/c3.png',
-  '/img/brands/c4.png',
-  '/img/brands/c5.png',
-  '/img/brands/c6.png'
+  '/img/brands/cc1.png',
+  '/img/brands/cc2.png',
+  '/img/brands/cc3.png',
+  '/img/brands/cc4.png',
+  '/img/brands/cc5.png',
+  '/img/brands/cc6.png',
+  '/img/brands/cc7.png',
+  '/img/brands/cc8.png',
+  '/img/brands/cc9.png'
 ];
 
 // used in the client-4, client-5 block

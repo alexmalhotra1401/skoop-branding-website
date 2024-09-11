@@ -19,7 +19,7 @@ export default function Process9() {
 
       <div className="col-lg-5 col-xl-4 offset-lg-1">
         <h2 className="fs-15 text-uppercase text-muted mb-3">How It Works?</h2>
-        <h3 className="display-4 mb-7">Here are the 3 working steps on success.</h3>
+        <h3 className="display-4 mb-7">Here are the 3 Easy steps for onboarding Skoop.</h3>
 
         {processList8.map(({ Icon, id, iconColor, ...item }) => (
           <ServiceCard3 key={id} {...item} Icon={<Icon className={`icon-svg-md text-${iconColor} me-5`} />} />

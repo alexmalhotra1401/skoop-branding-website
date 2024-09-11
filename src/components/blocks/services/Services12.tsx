@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 // CUSTOM ICON COMPONENT
 import Rocket from "icons/lineal/Rocket";
-import Shield from "icons/lineal/Shield";
-import Savings from "icons/lineal/Savings";
+import ChatGPT from "icons/lineal/ChatGPT";
+import Hand from "icons/lineal/Hand";
 // GLOBAL CUSTOM COMPONENTS
 import NextLink from "components/reuseable/links/NextLink";
 
@@ -11,29 +11,33 @@ export default function Services12() {
     <Fragment>
       <div className="row">
         <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center">
-          <h2 className="fs-15 text-uppercase text-muted mb-3">Why Choose Sandbox?</h2>
+          <h2 className="fs-15 text-uppercase text-muted mb-3">
+            Why Choose Skoop?
+          </h2>
           <h3 className="display-4 mb-10 px-xl-10 px-xxl-15">
-            Here are a few reasons why our customers choose Sandbox.
+            Here are a few reasons why our customers choose Skoop.
           </h3>
         </div>
       </div>
 
       <ul
         role="tablist"
-        className="nav nav-tabs nav-tabs-bg nav-tabs-shadow-lg d-flex justify-content-between nav-justified flex-lg-row flex-column">
+        className="nav nav-tabs nav-tabs-bg nav-tabs-shadow-lg d-flex justify-content-between nav-justified flex-lg-row flex-column"
+      >
         <li className="nav-item" role="presentation">
           <a
             role="tab"
             href="#tab2-1"
             data-bs-toggle="tab"
             aria-selected="true"
-            className="nav-link d-flex flex-row active">
+            className="nav-link d-flex flex-row active"
+          >
             <div>
               <Rocket className="icon-svg-md text-yellow me-4" />
             </div>
             <div>
-              <h4 className="mb-1">Easy Usage</h4>
-              <p>Duis mollis commodo luctus cursus commodo tortor mauris.</p>
+              <h4 className="mb-1">Power Up LinkedIn Interactions</h4>
+              <p>to engage, influence, and grow your reach</p>
             </div>
           </a>
         </li>
@@ -45,13 +49,16 @@ export default function Services12() {
             href="#tab2-2"
             data-bs-toggle="tab"
             aria-selected="false"
-            className="nav-link d-flex flex-row">
+            className="nav-link d-flex flex-row"
+          >
             <div>
-              <Savings className="icon-svg-md text-green me-4" />
+              <ChatGPT className="icon-svg-md text-green me-4" />
             </div>
             <div>
-              <h4 className="mb-1">Fast Transactions</h4>
-              <p>Vivamus sagittis lacus augue fusce dapibus tellus nibh.</p>
+              <h4 className="mb-1">Next-Level Chat GPT Features</h4>
+              <p>
+                To provide accurate, context-rich replies instantly tellus nibh.
+              </p>
             </div>
           </a>
         </li>
@@ -63,13 +70,17 @@ export default function Services12() {
             href="#tab2-3"
             data-bs-toggle="tab"
             aria-selected="false"
-            className="nav-link d-flex flex-row">
+            className="nav-link d-flex flex-row"
+          >
             <div>
-              <Shield className="icon-svg-md text-red me-4" />
+              <Hand className="icon-svg-md text-red me-4" />
             </div>
             <div>
-              <h4 className="mb-1">Secure Payments</h4>
-              <p>Vestibulum ligula porta felis maecenas faucibus mollis.</p>
+              <h4 className="mb-1">Cutting-Edge Tools</h4>
+              <p>
+                featuring high-quality video and audio capture with a media
+                vault.
+              </p>
             </div>
           </a>
         </li>
@@ -187,7 +198,7 @@ export default function Services12() {
               </div>
             </div>
 
-            <List title="Secure Payments" color="red" />
+            <List title="Easy Usage" color="red" />
           </div>
         </div>
       </div>
@@ -201,24 +212,28 @@ const List = ({ color, title }: ListProps) => {
     <div className="col-lg-6">
       <h2 className="mb-3">{title}</h2>
       <p>
-        Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo
-        risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-        condimentum nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna.
+        Skoop is designed to facilitate in helping you send the audio and video
+        messages easily
       </p>
-
       <ul className={`icon-list bullet-bg bullet-soft-${color}`}>
         <li>
-          <i className="uil uil-check" /> Aenean eu leo quam. Pellentesque ornare.
+          <i className="uil uil-check" /> Quick Video recording with various
+          aspect ratios
         </li>
         <li>
-          <i className="uil uil-check" /> Nullam quis risus eget urna mollis ornare.
+          <i className="uil uil-check" /> High quality audio recording using
+          system microphone
         </li>
         <li>
-          <i className="uil uil-check" /> Donec id elit non mi porta gravida at eget.
+          <i className="uil uil-check" /> Ample of templates generated by AI to
+          help you send quick response
         </li>
       </ul>
-
-      <NextLink title="Learn More" href="#" className={`btn btn-${color} mt-2`} />
+      <NextLink
+        title="Learn More"
+        href="#"
+        className={`btn btn-${color} mt-2`}
+      />
     </div>
   );
 };

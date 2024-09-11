@@ -22,45 +22,45 @@ const list = [
 const testimonialList = [
   {
     id: 1,
-    name: 'Coriss Ambady',
-    image: '/img/avatars/te1.jpg',
+    name: 'Kevin Scoggin',
+    image: '/img/avatars/test1.jpg',
     designation: 'Financial Analyst',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis.`
+    review: `Just started using Skoop! I love it. It has elevated my LinkedIn prospecting game tremendously. It's super easy to use.`
   },
   {
     id: 2,
-    name: 'Cory Zamora',
-    image: '/img/avatars/te2.jpg',
+    name: 'Murray Cowell',
+    image: '/img/avatars/test2.jpg',
     designation: 'Marketing Specialist',
-    review: `Fusce dapibus, tellus ac cursus tortor mauris condimentum fermentum massa justo sit amet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia.`
+    review: `This is a superb extension providing the ability to send video and audio messages via LinkedIn GMail and many other apps. I use it mainly for LinkedIn and it is so much easier than LinkedIn's built-in video messaging, which you can only use on the mobile app.`
   },
   {
     id: 3,
-    name: 'Nikolas Brooten',
-    image: '/img/avatars/te3.jpg',
+    name: 'Ed Forteau',
+    image: '/img/avatars/test3.jpg',
     designation: 'Sales Manager',
-    review: `Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui.`
+    review: `This is a superb extension providing the ability to send video and audio messages via LinkedIn GMail and many other apps. I use it mainly for LinkedIn and it is so much easier than LinkedIn's built-in video messaging, which you can only use on the mobile app.`
   },
   {
     id: 4,
-    name: 'Coriss Ambady',
-    image: '/img/avatars/te4.jpg',
+    name: 'Melanie Goodman',
+    image: '/img/avatars/test4.jpg',
     designation: 'Financial Analyst',
-    review: `Etiam adipiscing tincidunt elit convallis felis suscipit ut. Phasellus rhoncus tincidunt auctor. Nullam eu sagittis mauris. Donec non dolor ac elit aliquam tincidunt at at sapien. Aenean tortor`
+    review: `I am highly impressed by this intuitive app which really personalised my LinkedIn messages and makes them stand out in people's inboxes - I am getting a superb response so far! Would recommend`
   },
   {
     id: 5,
-    name: 'Laura Widerski',
-    image: '/img/avatars/te5.jpg',
+    name: 'Markus Neukom',
+    image: '/img/avatars/test5.jpg',
     designation: 'Sales Specialist',
-    review: `Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient.`
+    review: `If I could give SKOOP 6 stars, I absolutely would. This app revolutionizes LinkedIn outreach by making it easy to create personal connections through video. Previously, sending personalized videos was a cumbersome task, often requiring your phone and risking awkward angles while viewing and commenting on profiles.`
   },
   {
     id: 6,
-    name: 'Jackie Sanders',
-    image: '/img/avatars/te6.jpg',
+    name: 'Kelvin Parker',
+    image: '/img/avatars/test6.jpg',
     designation: 'Jackie Sanders',
-    review: `Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus magnis dis montes, nascetur ridiculus mus. Donec sed odio.`
+    review: `The Skoop has transformed my LinkedIn lead gen. efforts! The ability to create and send personalized videos and voice memos has added a new, engaging dimension to my messages.`
   }
 ];
 
