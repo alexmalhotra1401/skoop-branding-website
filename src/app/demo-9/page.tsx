@@ -16,7 +16,6 @@ export default function Demo9() {
       {/* ========== header ========== */}
       <header className="wrapper bg-soft-primary">
         <Navbar
-          info
           navOtherClass="navbar-other ms-lg-4"
           navClassName="navbar navbar-expand-lg classic transparent navbar-light"
           button={

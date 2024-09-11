@@ -11,7 +11,7 @@ export default function Footer8() {
         <div className="row gy-6 gy-lg-0">
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <img className="mb-4" src="/img/logo-light.png" srcSet="/img/logo-light@2x.png 2x" alt="" />
+              <img className="mb-4" src="/img/mylogo.png" srcSet="/img/mylogo@2x.png 2x" alt="" />
 
               <p className="mb-4">
                 © 2024 Skoop. <br className="d-none d-lg-block" />

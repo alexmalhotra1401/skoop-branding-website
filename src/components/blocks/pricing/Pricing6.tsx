@@ -16,15 +16,28 @@ export default function Pricing6() {
         <h3 className="display-4 mb-5">We offer great and premium prices.</h3>
 
         <p className="mb-5">
-          Enjoy a <NextLink title="free 30-day trial" href="#" className="hover" /> and experience the full service. No
+          Enjoy a free 14-day trial Limited to 15 videos and 50 AI responses. No
           credit card required!
         </p>
 
-        <NextLink href="#" title="See All Prices" className="btn btn-primary rounded mt-2" />
+        <div>
+          <p>
+            <img src="/img/hangout_video.png" alt="" />{" "}
+            <span>Video & Screen recordings</span>
+          </p>
+          <p>
+            <img src="/img/comment.png" alt="" />{" "}
+            <span>Save Template Messages</span>
+          </p>
+          <p>
+            <img src="/img/bolt.png" alt="" />{" "}
+            <span>AI generated responses</span>
+          </p>
+        </div>
       </div>
 
       <div className="col-lg-7 offset-lg-1 pricing-wrapper">
-        <div className="pricing-switcher-wrapper switcher justify-content-start justify-content-lg-end">
+        {/* <div className="pricing-switcher-wrapper switcher justify-content-start justify-content-lg-end">
           <p className="mb-0 pe-3">Monthly</p>
 
           <Switch value={activeYearly} onChange={setActiveYearly} />
@@ -32,12 +45,17 @@ export default function Pricing6() {
           <p className="mb-0 ps-3">
             Yearly <span className="text-red">(Save 30%)</span>
           </p>
-        </div>
+        </div> */}
 
         <div className="row gy-6 mt-5">
           {pricingList1.map((item, i) => (
             <div className={`col-md-6 ${i === 1 && "popular"}`} key={i}>
-              <PricingCard1 roundedButton bulletBg {...item} activeYearly={activeYearly} />
+              <PricingCard1
+                roundedButton
+                bulletBg
+                {...item}
+                activeYearly={activeYearly}
+              />
             </div>
           ))}
         </div>

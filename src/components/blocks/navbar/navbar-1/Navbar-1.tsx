@@ -21,6 +21,7 @@ import PagesNavItem from "../components/pages-nav-item";
 import BlocksNavItem from "../components/blocks-nav-item";
 import ProjectsNavItem from "../components/projects-nav-item";
 import DocumentationNavItem from "../components/documentation-nav-item";
+import CustomItem from "../components/custom-item";
 
 // ===================================================================
 interface NavbarProps {
@@ -49,56 +50,89 @@ export default function NavbarOne({
   language = false,
   stickyBox = true,
   navOtherClass = "navbar-other w-100 d-flex ms-auto",
-  navClassName = "navbar navbar-expand-lg center-nav transparent navbar-light"
+  navClassName = "navbar navbar-expand-lg center-nav transparent navbar-light",
 }: NavbarProps) {
   useNestedDropdown();
   const sticky = useSticky(350);
   const navbarRef = useRef<HTMLElement | null>(null);
 
   // dynamically render the logo
-  const logo = sticky ? "logo-dark" : logoAlt ?? "logo-dark";
+  const logo = "mylogo";
 
   // dynamically added navbar className
-  const fixedClassName = "navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed";
+  const fixedClassName =
+    "navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed";
 
   // all main header contents
   const headerContent = (
     <Fragment>
       <div className="navbar-brand w-100">
-        <NextLink href="/" title={<img alt="logo" src={`/img/${logo}.png`} srcSet={`/img/${logo}@2x.png 2x`} />} />
+        <NextLink
+          href="/"
+          title={
+            <img
+              alt="logo"
+              src={`/img/${logo}.png`}
+              srcSet={`/img/${logo}@2x.png 2x`}
+            />
+          }
+        />
       </div>
 
-      <div id="offcanvas-nav" data-bs-scroll="true" className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+      <div
+        id="offcanvas-nav"
+        data-bs-scroll="true"
+        className="navbar-collapse offcanvas offcanvas-nav offcanvas-start"
+      >
         <div className="offcanvas-header d-lg-none">
-          <h3 className="text-white fs-30 mb-0">Sandbox</h3>
-          <button type="button" aria-label="Close" data-bs-dismiss="offcanvas" className="btn-close btn-close-white" />
+          <h3 className="text-white fs-30 mb-0">Skoop</h3>
+          <button
+            type="button"
+            aria-label="Close"
+            data-bs-dismiss="offcanvas"
+            className="btn-close btn-close-white"
+          />
         </div>
 
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
           <ul className="navbar-nav">
             {/* ===================== demos nav item ===================== */}
-            <DemosNavItem />
+            {/* <DemosNavItem /> */}
 
             {/*  ===================== pages nav item  ===================== */}
-            <PagesNavItem />
+            {/* <PagesNavItem /> */}
 
             {/* ===================== projects nav item  ===================== */}
-            <ProjectsNavItem />
+            {/* <ProjectsNavItem /> */}
 
             {/* ===================== blog nav item ===================== */}
-            <BlogNavItem />
+            {/* <BlogNavItem /> */}
 
             {/* ===================== blocks nav item ===================== */}
-            <BlocksNavItem />
+            {/* <BlocksNavItem /> */}
 
             {/* ===================== documentation nav item ===================== */}
-            <DocumentationNavItem />
+            {/* <DocumentationNavItem /> */}
+
+            {[
+              "Why Skoop",
+              "Testimonials",
+              "How it works",
+              "Pricing",
+              "FAQs",
+            ].map((item, _idx) => (
+              <CustomItem key={`${item}_${_idx}`} value={item} />
+            ))}
           </ul>
 
           {/* ============= show contact info in the small device sidebar ============= */}
           <div className="offcanvas-footer d-lg-none">
             <div>
-              <NextLink title="info@email.com" className="link-inverse" href="mailto:first.last@email.com" />
+              <NextLink
+                title="info@email.com"
+                className="link-inverse"
+                href="mailto:first.last@email.com"
+              />
               <br />
               <NextLink href="tel:0123456789" title="00 (123) 456 78 90" />
               <br />
@@ -123,13 +157,19 @@ export default function NavbarOne({
 
   return (
     <Fragment>
-      {stickyBox ? <div style={{ paddingTop: sticky ? navbarRef.current?.clientHeight : 0 }} /> : null}
+      {stickyBox ? (
+        <div
+          style={{ paddingTop: sticky ? navbarRef.current?.clientHeight : 0 }}
+        />
+      ) : null}
 
       <nav ref={navbarRef} className={sticky ? fixedClassName : navClassName}>
         {fancy ? (
           <FancyHeader>{headerContent}</FancyHeader>
         ) : (
-          <div className="container flex-lg-row flex-nowrap align-items-center">{headerContent}</div>
+          <div className="container flex-lg-row flex-nowrap align-items-center">
+            {headerContent}
+          </div>
         )}
       </nav>
 
