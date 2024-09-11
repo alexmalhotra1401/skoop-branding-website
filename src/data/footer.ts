@@ -1,9 +1,8 @@
 const footerNav = [
-  { title: 'About Us', url: '#' },
-  { title: 'Our Story', url: '#' },
-  { title: 'Projects', url: '#' },
-  { title: 'Terms of Use', url: '#' },
-  { title: 'Privacy Policy', url: '#' }
+  { title: 'Terms of Use', url: 'https://crm.skoopapp.com/termsofuse' },
+  { title: 'Privacy Policy', url: 'https://crm.skoopapp.com/privacypolicy' },
+  { title: 'Affiliates Policy', url: 'https://crm.skoopapp.com/affiliatepolicies' },
+  { title: 'Become an Affiliate', url: '#' },
 ];
 
 export const helps = [
