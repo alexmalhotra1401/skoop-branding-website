@@ -60,8 +60,7 @@ export default function Hero9() {
                 <div className="ms-auto mt-auto" style={zoomInAnimate("300ms")}>
                   <img
                     alt="demo"
-                    src="/img/photos/sa20.jpg"
-                    srcSet="/img/photos/sa20@2x.jpg 2x"
+                    src="/img/photos/1.png"
                     className="img-fluid rounded shadow-lg"
                   />
                 </div>
@@ -72,8 +71,7 @@ export default function Hero9() {
                 >
                   <img
                     alt="demo"
-                    src="/img/photos/sa18.jpg"
-                    srcSet="/img/photos/sa18@2x.jpg 2x"
+                    src="/img/photos/2.png"
                     className="img-fluid rounded shadow-lg"
                   />
                 </div>
@@ -83,8 +81,7 @@ export default function Hero9() {
                 <div>
                   <img
                     alt="demo"
-                    src="/img/photos/sa16.jpg"
-                    srcSet="/img/photos/sa16@2x.jpg 2x"
+                    src="/img/photos/3.png"
                     className="w-100 img-fluid rounded shadow-lg"
                   />
                 </div>
@@ -94,8 +91,7 @@ export default function Hero9() {
                 <div className="mt-auto" style={zoomInAnimate("300ms")}>
                   <img
                     alt="demo"
-                    src="/img/photos/sa21.jpg"
-                    srcSet="/img/photos/sa21@2x.jpg 2x"
+                    src="/img/photos/4.png"
                     className="img-fluid rounded shadow-lg"
                   />
                 </div>
@@ -103,8 +99,7 @@ export default function Hero9() {
                 <div className="mt-5" style={zoomInAnimate("600ms")}>
                   <img
                     alt="demo"
-                    src="/img/photos/sa19.jpg"
-                    srcSet="/img/photos/sa19@2x.jpg 2x"
+                    src="/img/photos/8.png"
                     className="img-fluid rounded shadow-lg"
                   />
                 </div>
@@ -112,8 +107,7 @@ export default function Hero9() {
                 <div className="mt-5 mb-10" style={zoomInAnimate("900ms")}>
                   <img
                     alt="demo"
-                    src="/img/photos/sa17.jpg"
-                    srcSet="/img/photos/sa17@2x.jpg 2x"
+                    src="/img/photos/5.png"
                     className="img-fluid rounded shadow-lg"
                   />
                 </div>
