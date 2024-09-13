@@ -37,12 +37,53 @@ export default function Hero9() {
 
             <div className="d-flex justify-content-center justify-content-lg-start">
               <span style={slideInDownAnimate("1200ms")}>
-                <NextLink
-                  title="Watch Video"
-                  href="#"
+                <button
+                  type="button"
                   className="btn btn-lg btn-primary rounded me-2"
-                />
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  Watch Video
+                </button>
               </span>
+
+              <div
+                className="modal fade"
+                id="myModal"
+                tabIndex={-1}
+                aria-labelledby="myModalLabel"
+                aria-hidden="true"
+              >
+                <div className="modal-dialog modal-dialog-centered">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <button
+                        type="button"
+                        className="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div className="modal-body">
+                      <div
+                        id="iframe-container"
+                        className="d-flex justify-content-center"
+                      >
+                        <iframe
+                          src="https://play.vidyard.com/LChiCn2f7NSdWJexnhzkyz"
+                          allow="autoplay; encrypted-media"
+                          allowFullScreen={true}
+                          width="500"
+                          height="300"
+                        />
+                      </div>
+                    </div>
+                    <div className="modal-footer">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <span style={slideInDownAnimate("1500ms")}>
                 <NextLink
