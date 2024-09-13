@@ -11,7 +11,7 @@ export default function Hero9() {
   const OPTIONS = {
     loop: true,
     autoStart: true,
-    strings: ["easy usage"],
+    strings: ["LinkedIn", "Gmail"],
   };
 
   return (
@@ -60,7 +60,7 @@ export default function Hero9() {
                 <div className="ms-auto mt-auto" style={zoomInAnimate("300ms")}>
                   <img
                     alt="demo"
-                    src="/img/photos/1.png"
+                    src="/img/svg/test1.svg"
                     className="img-fluid rounded shadow-lg"
                   />
                 </div>
@@ -71,7 +71,7 @@ export default function Hero9() {
                 >
                   <img
                     alt="demo"
-                    src="/img/photos/2.png"
+                    src="/img/svg/test2.svg"
                     className="img-fluid rounded shadow-lg"
                   />
                 </div>
@@ -81,7 +81,7 @@ export default function Hero9() {
                 <div>
                   <img
                     alt="demo"
-                    src="/img/photos/3.png"
+                    src="/img/svg/test3.svg"
                     className="w-100 img-fluid rounded shadow-lg"
                   />
                 </div>
@@ -91,7 +91,7 @@ export default function Hero9() {
                 <div className="mt-auto" style={zoomInAnimate("300ms")}>
                   <img
                     alt="demo"
-                    src="/img/photos/4.png"
+                    src="/img/svg/test4.svg"
                     className="img-fluid rounded shadow-lg"
                   />
                 </div>
@@ -99,15 +99,7 @@ export default function Hero9() {
                 <div className="mt-5" style={zoomInAnimate("600ms")}>
                   <img
                     alt="demo"
-                    src="/img/photos/8.png"
-                    className="img-fluid rounded shadow-lg"
-                  />
-                </div>
-
-                <div className="mt-5 mb-10" style={zoomInAnimate("900ms")}>
-                  <img
-                    alt="demo"
-                    src="/img/photos/5.png"
+                    src="/img/svg/test5.svg"
                     className="img-fluid rounded shadow-lg"
                   />
                 </div>

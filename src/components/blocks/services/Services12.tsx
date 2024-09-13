@@ -95,7 +95,7 @@ export default function Services12() {
                 <div className="col-6">
                   <img
                     alt=""
-                    src="/img/photos/6.png"
+                    src="/img/svg/test6.svg"
                     className="img-fluid rounded shadow-lg d-flex ms-auto"
                   />
                 </div>
@@ -103,12 +103,12 @@ export default function Services12() {
                 <div className="col-6">
                   <img
                     alt=""
-                    src="/img/photos/7.png"
+                    src="/img/svg/test7.svg"
                     className="img-fluid rounded shadow-lg mb-5"
                   />
                   <img
                     alt=""
-                    src="/img/photos/8.png"
+                    src="/img/svg/test8.svg"
                     className="img-fluid rounded shadow-lg d-flex col-10"
                   />
                 </div>
